@@ -1,0 +1,50 @@
+# M-how data stored in DB; V-visible to user(GUI/HTML pages) ; C-interface b/w M&V
+
+# from app1 import app->app1=app.py app2=variable
+
+# constructor->under the class->that classes object is initialized wherever as obj->before any func. of other class 
+getting called ,constructor gets automatically executed.
+
+# mysql.connector.connect->connect is funcn. takes 4 params
+
+# con->instance (object store)created so that perform operations->use try to check if conncn established
+
+# con.cursor(dict)->to execute read oprn->reecords from db as dict format
+
+# cursor->An object that helps execute queries and fetch records from a database.
+
+# To execute cur (query)in any funcn->cur isn't in scope-> to use obj [cur,con] use self->give Global scope
+self-reference to the current instance of a class-access variables that belong to the class-call it whatever we like
+# json.dumps->stringfy
+
+# ?fetch data from POST req from postman->data sent from body form -> get in req.form
+
+# Postman data->Python env (Controlr-C)-> to send to model(M)->self(pre-defined),data(user defined) & req.form in return() paramter
+
+#self.con.autocommit=True-commit to sql db automatically
+
+#rowcount= data updated or not
+
+# Params to generate good response:
+1.Generate a json response(redable format) ,
+2.associate that json response to suitable http status code
+3. 2 &  suitable http response header 
+
+
+# return {"message":"No Data found"}-> responses converted to json
+
+# dictionary->key=payload >Key-value pattern
+
+# Postman bydefault-200OK -but if no data found-?https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+import make_response->make_response funcn->instead of returning body only return response object
+
+#Access control allow origin header- CORS implementation
+COR-bt default block -> to allow ->on our server side env(here flask) ->associate a http resp code above
+*-allow from anywhere
+res-instance for response
+
+#for pagination- Pagination enabled REST Api
+#timestamp->epoch time format
+
+#Decorators->funcns which return another func by changing it.
+

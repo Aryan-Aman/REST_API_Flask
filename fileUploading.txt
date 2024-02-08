@@ -1,0 +1,9 @@
+1.upload file from postman to server
+2.save file to filesystm with unique filename
+3.update filepath in db with respective entity
+
+4.creating an endpoint to read file
+-base url?->
+myapp.com-our domain ->UI being served
+our api linked to ->api.myapp.com
+FEdev creating app for myapp.com ,send http req to connect with data he'll send it through [api.myapp.com/user/getall...etc]

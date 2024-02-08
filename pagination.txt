@@ -1,0 +1,7 @@
+# Logic
+select * from users limit x - from 1st row to 7th row data
+""              ""        y,x- from yth row next x rows -strting pt and limit
+/users/getall/limit/5/page/2 -15 records total->11th to 15th
+...../limit/5/page/10- 45 to 50
+start pt. = (page*limit) - limit 
+        (10*5)-5=50-5= 45 

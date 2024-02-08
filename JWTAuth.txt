@@ -1,0 +1,30 @@
+JWT-Json Web Token
+Server side resources which we access through api ->we can get access control or say can keep more secure
+JWT-Encrypted string
+Data which is encrypted to generate JWT->TO store/repsnt that data the content-type/format we use is called Json
+Json-data store/rreprsnt format->keys associate->keys->any values(int,bool etc.)/subjson docs/nested dstr also
+Encryption of Json->Lib of each prog. lang./plugin
+Encryption key needed to encrypted
+How JWT Works-> eg Bus/Train pass validity and expiry
+
+Implementation Steps:
+Client                                                       Server
+Req.1) Login Req(uname,pwd)  ------------------->If validated > eg. uid:14 ,role:admin +(EXPIRY of JWT)+ Encryption key= JWT 
+                                                   
+Store JWT                    <--------------------JWT(Encrypted String)
+
+Req.2)
+.      ----------------------------------------->JWT->(eg. ecom web user accessing prev orders)
+Req.n)
+
+
+Not all APIs need JWT auth,accessible to everyone,apis which can be accessed via login only for that only we write code for JWT auth execution.
+
+__________________________________________________________________
+Authentication(ready to access resources not accessed yet) & Authorization(check permission to acccess particular resource to particular user role)
+Eg. Youtube ->watch(Guest user)
+       User ->Subscribe/like/commnt etc.
+       Creator->to upload videos
+
+
+#On update cascade in mysql
